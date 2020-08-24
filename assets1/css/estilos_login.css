@@ -9,6 +9,11 @@ body {
   
 }
 
+.registro
+{
+  text-align: center;
+}
+
 .card-signin {
   border: 0;
   border-radius: 1rem;

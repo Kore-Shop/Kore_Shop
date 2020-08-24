@@ -15,7 +15,6 @@
 
   <!-- Custom styles for this template -->
   <link href="<?= base_url() ?>assets1/css/style.css" rel="stylesheet">
-  <link href="<?= base_url() ?>assets1/css/kore.css" rel="stylesheet">
 
 </head>
 
@@ -72,33 +71,47 @@
 
 
           <div class="col-xs-12 col-md-8" >
-            <h3>Productos registrados</h3>
+            <h3>Resgistro para un nuevo producto</h3>
+            <form>
+              <div class="form-group">
+                <label>Nombre</label>
+                <input type="text" name="nombre" id="nombre" class="form-control">
+              </div>
+              <div class="form-group">
+                <label>Categoria</label>
+                <select name="categoria" id="categoria" class="form-control">
+                  <option>Hombres</option>
+                  <option>Mujeres</option>
+                  <option>Niños</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label>Marca</label>
+                <select name="marca" id="marca" class="form-control">
+                  <option>ZARA</option>
+                  <option>MANGO</option>
+                  <option>BOSS</option>
+                  <option>H&M</option>
+                  <OPTGROUP>GOCCO</OPTGROUP>
+                </select>
+              </div>
+              <div class="form-group">
+                <label>Precio</label>
+                <input type="number" name="precio" id="precio" class="form-control" value="00.0" step="0.5" min="0">
+              </div>
 
-            <table>
-              <thead>
-                <tr>
-                  <th>No.</th>
-                  <th>Producto</th>
-                  <th>Categoría</th>
-                  <th>Marca</th>   
-                  <th>Precio</th>
-                  <th>Descripción</th>
-                  <th>Fecha registro</th>
-                  <th>&nbsp;</th>
-                </tr>
-              </thead>
-              <tbody>
-                <?
-                if($productos!=false){
-                  foreach ($productos->result() as $producto)}
-                ?>
-              <tr>
-                <td>-</td>
-                <td><?= $producto->nombre ?></td>
-              </tr>
-              </tbody>
-            </table>
-
+              <div class="form-group">
+                <label>Descripción</label>
+                <textarea name="description" id="description" class="form-control" placeholder="Escribir description"></textarea>
+              </div>
+              <div class="form-group">
+                <label>Imagen</label>
+                <input type="file" name="file" class="form-control">
+              </div>
+              <div>
+                <button class="btn btn-primary" name="aceptar" id="aceptar">ACEPTAR</button>
+              </div>
+            </form>
             
           </div>
 
@@ -127,8 +140,8 @@
   </footer>
 
   <!-- Bootstrap core JavaScript -->
-  <script src="<?= base_url() ?>../assets1/vendor/jquery/jquery.min.js"></script>
-  <script src="<?= base_url() ?>../assets1/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="<?= base_url() ?>assets1/vendor/jquery/jquery.min.js"></script>
+  <script src="<?= base_url() ?>assets1/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
 </body>
 

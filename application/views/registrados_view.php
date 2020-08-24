@@ -15,7 +15,6 @@
 
   <!-- Custom styles for this template -->
   <link href="<?= base_url() ?>assets1/css/style.css" rel="stylesheet">
-  <link href="<?= base_url() ?>assets1/css/kore.css" rel="stylesheet">
 
 </head>
 
